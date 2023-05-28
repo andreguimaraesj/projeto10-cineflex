@@ -1,6 +1,10 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
+import ResetStyle from "./ResetStyle";
+
 
 const GlobalStyle = createGlobalStyle`
+	${ResetStyle}
+
 	button {
 		height: 43px;
 		background: #E8833A;
@@ -13,11 +17,9 @@ const GlobalStyle = createGlobalStyle`
 		justify-content: center;
 		text-align: center;
 		color: #FFFFFF;
-		padding: 0 20px;
-		&:disabled {
-			background-color: lightgray;
-		}
 	}
+
+
 	input {
 		background: #FFFFFF;
 		border: 1px solid #D5D5D5;
@@ -33,8 +35,8 @@ const GlobalStyle = createGlobalStyle`
 		&::placeholder{
 			font-style: italic;
 		}
-		
 	}
-`
+`;
 
-export default GlobalStyle
+
+export default GlobalStyle;
