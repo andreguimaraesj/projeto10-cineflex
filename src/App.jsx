@@ -1,18 +1,16 @@
 import styled from "styled-components";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { apiToken } from "./components/axios";
-
-import arrow from "./assets/arrow.svg";
-
 import HomePage from "./pages/HomePage/HomePage";
 import SessionsPage from "./pages/SessionsPage/SessionsPage";
 import SeatsPage from "./pages/SeatsPage/SeatsPage";
 import SuccessPage from "./pages/SuccessPage/SuccessPage";
+import arrow from "./assets/arrow.svg";
 
 import GlobalStyle from "./style/GlobalStyle";
 
 export default function App() {
-  apiToken("DlfoYSzCAh10NN53qorutHex");
+  apiToken("GOkxWILyTc8C2bmTdcrg9ozF");
   const { pathname } = useLocation();
   const navigate = useNavigate();
   return (
