@@ -1,10 +1,8 @@
 import axios from "axios";
 
-
 export function apiToken(key) {
   axios.defaults.headers.common["Authorization"] = { key };
 }
-
 
 export function getMovies(set) {
   axios
@@ -12,7 +10,6 @@ export function getMovies(set) {
     .then((res) => set(res.data))
     .catch((error) => console.log(error.response));
 }
-
 
 export function getSessions(idMovie, set) {
   axios
@@ -24,7 +21,6 @@ export function getSessions(idMovie, set) {
 }
 
 
-
 export function getSeats(idSession, set) {
   axios
     .get(
@@ -33,7 +29,6 @@ export function getSeats(idSession, set) {
     .then((res) => set(res.data))
     .catch((error) => console.log(error.response));
 }
-
 
 
 export function postReserve(data, callBack) {

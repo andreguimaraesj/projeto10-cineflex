@@ -7,7 +7,6 @@ export default function SuccessPage() {
     const { purchase, data } = location.state;
     console.log(purchase, data);
 
-    
     function formatCpf(cpf) {
         const str = String(cpf);
         const newCpf = str.replace(
@@ -58,9 +57,6 @@ export default function SuccessPage() {
     );
 }
 
-
-
-
 const TextContainer = styled.div`
     width: 100%;
     display: flex;
@@ -72,7 +68,6 @@ const TextContainer = styled.div`
         margin-bottom: 10px;
     }
 `;
-
 
 const PageContainer = styled.div`
     display: flex;

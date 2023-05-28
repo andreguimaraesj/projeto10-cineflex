@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+
 const GlobalStyle = createGlobalStyle`
     a:visited { text-decoration: none; }
     a:hover { text-decoration: none; }
@@ -40,5 +41,6 @@ const GlobalStyle = createGlobalStyle`
 		
 	}
 `;
+
 
 export default GlobalStyle;
